@@ -10,7 +10,6 @@ body {
     direction: rtl;
     background-color: #f4f4f4;
 }
-
 .container {
     width: 90%;
     max-width: 600px;
@@ -27,6 +26,15 @@ header img {
     height: 120px;
     border-radius: 50%;
     margin-top: 10px;
+}
+.profile img {
+    width: 120px;  /* تقليل حجم الصورة */
+    height: 120px;
+    border-radius: 50%;  /* جعل الصورة دائرية */
+    border: 3px solid #007BFF;  /* إضافة إطار جميل */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+    display: block;
+    margin: 0 auto 10px;  /* توسيط الصورة وإضافة مسافة */
 }
 
 h1 {
