@@ -92,12 +92,12 @@ a {
     border-radius: 50%;
 }
 
-.testimonials {
+#testimonials {
     background: #f9f9f9;
     padding: 20px;
     text-align: center;
 }
-.testimonial {
+#testimonial {
     margin: 10px auto;
     width: 80%;
     background: white;
