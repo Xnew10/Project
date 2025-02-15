@@ -20,7 +20,7 @@ body {
     border-radius: 10px;
     margin-top: 20px;
 }
-.profile img {
+#profile img {
     width: 120px;  /* تقليل حجم الصورة */
     height: 120px;
     border-radius: 50%;  /* جعل الصورة دائرية */
