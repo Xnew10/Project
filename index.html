@@ -103,12 +103,42 @@
         </div>
     </div>
 </section>
+    
+    <section class="testimonials">
+    <h2>آراء عملائنا</h2>
+    <div class="testimonial">
+        <p>"خدمة ممتازة وسريعة جدًا، أنصح الجميع بالتجربة!"</p>
+        <h4>- أحمد علي</h4>
+    </div>
+    <div class="testimonial">
+        <p>"أسعار مناسبة وخدمة احترافية، سأتعامل معهم مجددًا!"</p>
+        <h4>- فاطمة محمد</h4>
+    </div>
+</section>
+    
     </div>
 
     <footer>
         <p>جميع الحقوق محفوظة &copy; 2025 | خدمتي</p>
         <!-- <p><a href="#">سياسة الخصوصية</a> | <a href="#">الشروط والأحكام</a></p> -->
     </footer>
+
+<button onclick="topFunction()" id="topBtn" title="الرجوع للأعلى">⬆</button>
+<script>
+  let mybutton = document.getElementById("topBtn");
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
 
 </body>
 </html>
