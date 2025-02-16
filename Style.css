@@ -42,7 +42,6 @@ p {
     font-size: 16px;
 }
 
-.services {
 .service-list {
     display: flex;
     flex-wrap: wrap;
