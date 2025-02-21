@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب الخدمة</title>
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        function updateWhatsAppLink() {
+            let quantity = document.getElementById("quantity").value;
+            let serviceName = document.getElementById("service-title").innerText;
+            let message = `السلام عليكم ورحمة الله و بركاته، أريد طلب ${quantity} من خدمة: ${serviceName}`;
+            let whatsappLink = `https://wa.me/249118422860?text=${encodeURIComponent(message)}`;
+            document.getElementById("whatsapp-button").href = whatsappLink;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <section class="service-details">
+            <img src="phones/X9c.jpg" alt="صورة الخدمة">
+            <h2 id="service-title"> HONOR X9C 5G </h2>
+            <p class="description"> 📢 HONOR X9C 5G – الأكثر انتشاراً في السودان! 🇸🇦📱
+
+📱 المواصفات:
+
+📺 الشاشة: 6.78 بوصة، دقة 1224×2700 بكسل، معدل تحديث 120Hz
+
+🚀 المعالج: Qualcomm Snapdragon 6 Gen 1، ثماني النواة
+
+💾 الذاكرة: 12GB RAM، تخزين داخلي 256GB
+
+📸 الكاميرا الخلفية: 108MP + 5MP، تصوير فيديو 4K
+
+🤳 الكاميرا الأمامية: 16MP، تصوير فيديو 1080p
+
+🔋 البطارية: 6600mAh، شحن سريع 66W
+
+📲 النظام: Android 14 مع واجهة MagicOS 8.0
+
+
+✨ المميزات:
+
+تصميم أنيق وخفيف الوزن (189 جرام)
+
+دعم Wi-Fi، Bluetooth 5.1، وNFC 🌐
+
+مستشعر بصمة تحت الشاشة لسهولة الوصول والأمان 🔒
+
+
+💡 الجهاز مناسب لـ:
+
+✔️ هواة الألعاب 🎮
+✔️ عشاق التصوير الاحترافي 📸
+✔️ مستخدمي السوشيال ميديا 📲
+✔️ متعدد الأغراض ويغنيك عن تغيير الجهاز لفترة طويلة 🤝
+
+🚚 خدمات التوصيل:
+
+توصيل سريع وفوري حتى باب المنزل 🛵💨
+
+الدفع عند الاستلام مع فاتورة وضمان 🤝💫
+
+
+#دائماً_معاكم_في_القمة 🌟
+
+
+
+
+☎️للطلب المباشر اضغط هنا 👇🏽
+
+#الجودة_عالية_والسعر_رخيص
+              <br />
+              <br />
+             ملاحظة : سعر الهاتف نهائي و غير شامل التوصيل
+            </p>
+            
+            <div class="order-controls">
+                <label for="quantity">عدد الخدمات المطلوبة:</label>
+                <input type="number" id="quantity" min="1" onchange="updateWhatsAppLink()">
+            </div>
+
+            <a id="whatsapp-button" href="https://wa.me/249118422860" target="_blank" class="whatsapp-btn">
+                طلب الهاتف عبر واتساب
+            </a>
+        </section>
+    </div>
+</body>
+</html>

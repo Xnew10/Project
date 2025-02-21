@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب الخدمة</title>
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        function updateWhatsAppLink() {
+            let quantity = document.getElementById("quantity").value;
+            let serviceName = document.getElementById("service-title").innerText;
+            let message = `السلام عليكم ورحمة الله و بركاته، أريد طلب ${quantity} من خدمة: ${serviceName}`;
+            let whatsappLink = `https://wa.me/249118422860?text=${encodeURIComponent(message)}`;
+            document.getElementById("whatsapp-button").href = whatsappLink;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <section class="service-details">
+            <img src="phones/S24 Ultra.jpeg" alt="صورة الخدمة">
+            <h2 id="service-title"> Realme S24 Ultra ( Copy s24 ultra ) </h2>
+            <p class="description"> Realme S24 Ultra – نسخة محسنة وممتازة!
+
+🔹 المواصفات:
+
+ذاكرة داخلية 128GB قابلة للتوسيع حتى 256GB
+
+رام 6GB لضمان أداء سلس
+
+كاميرات بجودة تصوير عالية 📸
+
+تصميم يشبه S24 Ultra مع نفس التطبيقات والثيمات ✅
+
+قلم سريع الاستجابة مرفق بالجهاز ✍️
+
+
+🔹 الملحقات المرفقة:
+
+جراب شفاف
+
+سماعة
+
+شاحن
+
+كتيب
+
+
+🔹 المزايا الإضافية:
+
+متوافق مع جميع أنواع الجرابات، الاستيكرات، والعدسات ✨👌
+
+التوصيل متاح في جميع المدن
+
+فاتورة رسمية باسمك الرباعي
+
+
+
+
+☎️للطلب المباشر اضغط هنا 👇🏽
+              <br />
+              <br />
+             ملاحظة : سعر الهاتف نهائي و غير شامل التوصيل
+            </p>
+            
+            <div class="order-controls">
+                <label for="quantity">عدد الخدمات المطلوبة:</label>
+                <input type="number" id="quantity" min="1" onchange="updateWhatsAppLink()">
+            </div>
+
+            <a id="whatsapp-button" href="https://wa.me/249118422860" target="_blank" class="whatsapp-btn">
+                طلب الهاتف عبر واتساب
+            </a>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب الخدمة</title>
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        function updateWhatsAppLink() {
+            let quantity = document.getElementById("quantity").value;
+            let serviceName = document.getElementById("service-title").innerText;
+            let message = `السلام عليكم ورحمة الله و بركاته، أريد طلب ${quantity} من خدمة: ${serviceName}`;
+            let whatsappLink = `https://wa.me/249118422860?text=${encodeURIComponent(message)}`;
+            document.getElementById("whatsapp-button").href = whatsappLink;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <section class="service-details">
+            <img src="phones/redmi 11 pro.webp" alt="صورة الخدمة">
+            <h2 id="service-title"> Xiaomi Redmi Note 11 Pro </h2>
+            <p class="description"> 🔥 Redmi Note 11 Pro – العملاق الجديد من شاومي! 🔥
+
+📍 أفضل المميزات:
+
+بطارية كبيرة السعة مع شحن سريع 67W 🔋⚡
+
+معالج قوي لأداء ممتاز ⚙️✨
+
+تصميم أنيق وخامات عالية الجودة 😎✨
+
+
+📱 مواصفات الجهاز:
+
+الشاشة: 6.67 بوصة Super AMOLED، دقة FHD+، معدل تحديث 120Hz ✨
+
+المعالج: Mediatek Helio G96، بتقنية 12 نانو 💪🔥
+
+التخزين والذاكرة: 256GB مع 8GB RAM 🥶⚡
+
+الكاميرا الخلفية: رباعية 108+8+2+2MP 📸🔥
+
+الكاميرا الأمامية: 16MP 📷✨
+
+البطارية: 5000mAh مع شحن سريع 67W 🔋💪
+
+
+
+☎️للطلب المباشر اضغط هنا 👇🏽
+
+#الجودة_عالية_والسعر_رخيص
+              <br />
+              <br />
+             ملاحظة : سعر الهاتف نهائي و غير شامل التوصيل
+            </p>
+            
+            <div class="order-controls">
+                <label for="quantity">عدد الخدمات المطلوبة:</label>
+                <input type="number" id="quantity" min="1" onchange="updateWhatsAppLink()">
+            </div>
+
+            <a id="whatsapp-button" href="https://wa.me/249118422860" target="_blank" class="whatsapp-btn">
+                طلب الهاتف عبر واتساب
+            </a>
+        </section>
+    </div>
+</body>
+</html>
