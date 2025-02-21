@@ -17,9 +17,13 @@
     <meta property="og:title" content="خدمتي " />
     <meta property="og:description" content="حيث تلتقي الخدمة بالكفاءة" />
     <meta property="og:image" content="img/logo.jpg" />
+    
+    
 
 </head>
 <body>
+    
+    
 
     <header>
         <div class="hero">
@@ -34,8 +38,18 @@
     <p>📞 واتساب: <a href="https://wa.me/249118422860" target="_blank">+249118422860</a></p>
     <p>📞 اتصال مباشر: +249118422860</p>
 </section>
+    
+    <button onclick="goToPage('index.html')">الصفحة الرئيسية</button>
+<button onclick="goToPage('phones.html')">الهواتف الذكية</button>
+
+<script>
+    function goToPage(page) {
+        window.location.href = page;
+    }
+</script>
 
         <section class="services">
+            
     <h2>خدماتنا</h2>
             <p>إختر خدمتك</p>
 
@@ -102,6 +116,16 @@
                 <p class="price">السعر المبدئي: 900,000 جنيه سوداني</p>
             </a>
         </div>
+        
+        <div class="service">
+            <a href="Order eight.html">
+                <img src="img/Order eight/img.jpg" alt="شراء الهواتف">
+                <h3>حجز و إتمام عملية الزيارة العائلية للسعودية</h3>
+                <p>نقدم خدمة حجز و إتمام عمليات الزيارة العائلية و العمرة للسعودية بأسعار ممتازة</p>
+                <p class="price">السعر المبدئي: 1,500,000 جنيه سوداني</p>
+            </a>
+        </div>
+        
     </div>
 </section>
     
@@ -213,18 +237,36 @@
     setInterval(changeTestimonial, 6000); // تغيير الرأي كل 5 ثوانٍ
 </script>
 
-    <script type='text/javascript' src='//pl25871410.effectiveratecpm.com/d5/cc/fd/d5ccfd45ab394d52df99d85c422b4dcf.js'></script>
+<script>
+    document.body.classList.add("page-transition");
+
+    function goToPage(page) {
+        document.body.style.opacity = "0";
+        setTimeout(() => {
+            window.location.href = page;
+        }, 500);
+    }
+
+    window.onload = () => {
+        document.body.style.opacity = "1";
+    };
+</script>
+
+<script type='text/javascript' src='//pl25871410.effectiveratecpm.com/d5/cc/fd/d5ccfd45ab394d52df99d85c422b4dcf.js'></script>
 
 <script type="text/javascript">
 	atOptions = {
 		'key' : '7d5c2a105fc6bd724991d9d48ea4446a',
 		'format' : 'iframe',
 		'height' : 90,
-		'width' : 728,
+		'width' : 628,
 		'params' : {}
 	};
 </script>
 <script type="text/javascript" src="//www.highperformanceformat.com/7d5c2a105fc6bd724991d9d48ea4446a/invoke.js"></script>
+
+<script async="async" data-cfasync="false" src="//pl25895850.effectiveratecpm.com/0c0c9a1eb6af78214ff2f03316c2134c/invoke.js"></script>
+<div id="container-0c0c9a1eb6af78214ff2f03316c2134c"></div>
 
 </body>
 </html>
