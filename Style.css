@@ -193,6 +193,11 @@ button:hover {
     transform: scale(1.05);
 }
 
+#imgPhone{
+  width: 100%; /* أو أي عرض تريده */
+  height: 300px; /* أو أي ارتفاع تريده */
+  object-fit: cover; /* يحافظ على الأبعاد بدون تشويه */
+}
 
 /* ✅ مقاس الشاشات من 1240px فأعلى */
 @media (min-width: 1240px) {
