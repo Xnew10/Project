@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>طلب الخدمة</title>
     <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
     <script>
         function updateWhatsAppLink() {
             let quantity = document.getElementById("quantity").value;
@@ -20,85 +50,52 @@
         <section class="service-details">
             <img src="phones/Galaxy A06.png" alt="صورة الخدمة">
             <h2 id="service-title"> Galaxy A06 </h2>
-            <p class="description">  مواصفات هاتف Samsung Galaxy A06:
-                <br />
-
-الشاشة:
-
-حجم 6.7 بوصة من نوع PLS LCD
-
-دقة HD+ تبلغ 720 × 1600 بكسل
-
-كثافة بكسلات حوالي 262 بكسل لكل بوصة
-
-تصميم بنوتش في منتصف الشاشة للكاميرا الأمامية
-
-
-المعالج:
-
-ثماني النواة من نوع MediaTek Helio G85 بتكنولوجيا 12 نانومتر
-
-
-الذاكرة والتخزين:
-
-ذاكرة وصول عشوائي (RAM) بسعة 4 أو 6 جيجابايت
-
-ذاكرة تخزين داخلية بسعة 64 أو 128 جيجابايت
-
-إمكانية توسيع التخزين عبر بطاقة microSD
-
-
-الكاميرا الخلفية:
-
-عدسة رئيسية بدقة 50 ميجابكسل بفتحة عدسة f/1.8
-
-عدسة عمق (لتحسين تأثير العزل) بدقة 2 ميجابكسل بفتحة عدسة f/2.4
-
-فلاش LED
-
-
-الكاميرا الأمامية:
-
-بدقة 8 ميجابكسل بفتحة عدسة f/2.0
-
-
-البطارية:
-
-سعة 5000 مللي أمبير
-
-دعم الشحن السريع بقدرة 25 واط
-
-
-نظام التشغيل:
-
-يعمل بنظام Android 14 مع واجهة One UI 6.1
-
-
-الأبعاد والوزن:
-
-الأبعاد: 167.3 × 77.3 × 8 ملم
-
-الوزن: 189 جرام
-
-
-مزايا إضافية:
-
-مستشعر بصمة مدمج في زر الطاقة
-
-دعم تقنية NFC
-
-منفذ سماعات 3.5 ملم
-
-راديو FM
-
-
-الألوان المتوفرة:
-
-الأسود، الذهبي
-
-
-
-لمزيد من التفاصيل، يمكنك زيارة الموقع الرسمي لشركة سامسونج.
+            <p class="description">  <table>
+        <tr>
+            <th>المواصفات</th>
+            <th>التفاصيل</th>
+        </tr>
+        <tr>
+            <td><strong>الشاشة</strong></td>
+            <td>6.7 بوصة PLS LCD، دقة HD+ (720 × 1600)، كثافة 262 بكسل لكل بوصة، نوتش للكاميرا الأمامية</td>
+        </tr>
+        <tr>
+            <td><strong>المعالج</strong></td>
+            <td>ثماني النواة MediaTek Helio G85 بتكنولوجيا 12 نانومتر</td>
+        </tr>
+        <tr>
+            <td><strong>الذاكرة والتخزين</strong></td>
+            <td>RAM: 4/6 جيجابايت، التخزين الداخلي: 64/128 جيجابايت، دعم microSD</td>
+        </tr>
+        <tr>
+            <td><strong>الكاميرا الخلفية</strong></td>
+            <td>رئيسية 50 ميجابكسل (f/1.8) + عدسة عمق 2 ميجابكسل (f/2.4) + فلاش LED</td>
+        </tr>
+        <tr>
+            <td><strong>الكاميرا الأمامية</strong></td>
+            <td>8 ميجابكسل (f/2.0)</td>
+        </tr>
+        <tr>
+            <td><strong>البطارية</strong></td>
+            <td>5000 مللي أمبير، شحن سريع 25 واط</td>
+        </tr>
+        <tr>
+            <td><strong>نظام التشغيل</strong></td>
+            <td>Android 14 مع One UI 6.1</td>
+        </tr>
+        <tr>
+            <td><strong>الأبعاد والوزن</strong></td>
+            <td>167.3 × 77.3 × 8 ملم، 189 جرام</td>
+        </tr>
+        <tr>
+            <td><strong>مزايا إضافية</strong></td>
+            <td>بصمة مدمجة بزر الطاقة، دعم NFC، منفذ سماعات 3.5 ملم، راديو FM</td>
+        </tr>
+        <tr>
+            <td><strong>الألوان المتوفرة</strong></td>
+            <td>الأسود، الذهبي</td>
+        </tr>
+    </table>
 
 
 
