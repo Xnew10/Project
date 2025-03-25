@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>طلب الخدمة</title>
     <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
     <script>
         function updateWhatsAppLink() {
             let quantity = document.getElementById("quantity").value;
@@ -20,99 +50,65 @@
         <section class="service-details">
             <img src="phones/S23 ultra.jpg" alt="صورة الخدمة">
             <h2 id="service-title"> Galaxy S23 Ultra </h2>
-            <p class="description"> مواصفات Samsung Galaxy S23 Ultra:
-                <br />
-
-الشاشة:
-
-6.8 بوصة Dynamic AMOLED 2X
-
-معدل تحديث 1-120 هرتز
-
-دقة QHD+ (3088 × 1440 بكسل)
-
-سطوع يصل إلى 1750 شمعة
-
-زجاج Gorilla Glass Victus 2
-
-
-المعالج:
-
-Snapdragon 8 Gen 2 for Galaxy
-
-
-الذاكرة والتخزين:
-
-8 أو 12 جيجابايت RAM
-
-سعات تخزين: 256 جيجابايت / 512 جيجابايت / 1 تيرابايت
-
-
-الكاميرا الخلفية:
-
-عدسة رئيسية 200 ميجابكسل
-
-عدسة فائقة الاتساع 12 ميجابكسل
-
-عدسة تليفوتوغرافي 3x 10 ميجابكسل
-
-عدسة تليفوتوغرافي 10x 10 ميجابكسل
-
-
-الكاميرا الأمامية:
-
-12 ميجابكسل
-
-
-البطارية:
-
-5000 مللي أمبير
-
-شحن سريع 45 واط (سلكي)
-
-شحن لاسلكي سريع 15 واط
-
-
-الأبعاد والوزن:
-
-163.4 × 78.1 × 8.9 ملم
-
-234 جرام
-
-
-المواد:
-
-إطار ألمنيوم معزز
-
-
-مقاومة الماء والغبار:
-
-معيار IP68
-
-
-نظام التشغيل:
-
-Android 13 مع واجهة One UI 5.1 (قابل للتحديث)
-
-
-ألوان الجهاز:
-
-Phantom Black – Cream – Green – Lavender
-
-ألوان حصرية عبر موقع سامسونج: Lime – Graphite – Sky Blue – Red
-
-
-ميزات إضافية:
-
-قلم S Pen مدمج
-
-دعم Wi-Fi 6E و Bluetooth 5.3
-
-
-
-للمزيد، يمكنك زيارة موقع سامسونج الرسمي.
-
-
+            <p class="description">
+    <table>
+        <tr>
+            <th>المواصفات</th>
+            <th>التفاصيل</th>
+        </tr>
+        <tr>
+            <td><strong>الشاشة</strong></td>
+            <td>6.8 بوصة Dynamic AMOLED 2X، معدل تحديث 1-120Hz، دقة QHD+ (3088 × 1440)، سطوع يصل إلى 1750 شمعة، زجاج Gorilla Glass Victus 2</td>
+        </tr>
+        <tr>
+            <td><strong>المعالج</strong></td>
+            <td>Snapdragon 8 Gen 2 for Galaxy</td>
+        </tr>
+        <tr>
+            <td><strong>الذاكرة والتخزين</strong></td>
+            <td>8 أو 12 جيجابايت RAM، سعات تخزين: 256 جيجابايت / 512 جيجابايت / 1 تيرابايت</td>
+        </tr>
+        <tr>
+            <td><strong>الكاميرا الخلفية</strong></td>
+            <td>رئيسية 200 ميجابكسل + فائقة الاتساع 12 ميجابكسل + تليفوتوغرافي 3x بدقة 10 ميجابكسل + تليفوتوغرافي 10x بدقة 10 ميجابكسل</td>
+        </tr>
+        <tr>
+            <td><strong>الكاميرا الأمامية</strong></td>
+            <td>12 ميجابكسل</td>
+        </tr>
+        <tr>
+            <td><strong>البطارية</strong></td>
+            <td>5000 مللي أمبير، شحن سريع 45 واط (سلكي)، شحن لاسلكي سريع 15 واط</td>
+        </tr>
+        <tr>
+            <td><strong>الأبعاد والوزن</strong></td>
+            <td>163.4 × 78.1 × 8.9 ملم، 234 جرام</td>
+        </tr>
+        <tr>
+            <td><strong>المواد</strong></td>
+            <td>إطار ألمنيوم معزز</td>
+        </tr>
+        <tr>
+            <td><strong>مقاومة الماء والغبار</strong></td>
+            <td>معيار IP68</td>
+        </tr>
+        <tr>
+            <td><strong>نظام التشغيل</strong></td>
+            <td>Android 13 مع واجهة One UI 5.1 (قابل للتحديث)</td>
+        </tr>
+        <tr>
+            <td><strong>ألوان الجهاز</strong></td>
+            <td>Phantom Black – Cream – Green – Lavender</td>
+        </tr>
+        <tr>
+            <td><strong>ألوان حصرية عبر موقع سامسونج</strong></td>
+            <td>Lime – Graphite – Sky Blue – Red</td>
+        </tr>
+        <tr>
+            <td><strong>ميزات إضافية</strong></td>
+            <td>قلم S Pen مدمج، دعم Wi-Fi 6E و Bluetooth 5.3</td>
+        </tr>
+    </table>
 
 
 
