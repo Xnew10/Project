@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>طلب الخدمة</title>
     <link rel="stylesheet" href="style1.css">
+    <style>
+    body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
     <script>
         function updateWhatsAppLink() {
             let quantity = document.getElementById("quantity").value;
@@ -20,106 +46,52 @@
         <section class="service-details">
             <img src="phones/S25 ultra.png" alt="صورة الخدمة">
             <h2 id="service-title"> Galaxy S25 Ultra </h2>
-            <p class="description"> مواصفات هاتف Samsung Galaxy S25 Ultra:
-                <br />
-
-الشاشة:
-
-حجم 6.9 بوصة Dynamic AMOLED 2X
-
-معدل تحديث متكيف 1-120Hz
-
-سطوع يصل إلى 2600 نتس
-
-طلاء مضاد للانعكاس
-
-زجاج Corning® Gorilla® Armor 2
-
-
-المعالج:
-
-Snapdragon® 8 Elite for Galaxy
-
-
-الذاكرة والتخزين:
-
-ذاكرة وصول عشوائي (RAM) بسعة 12 جيجابايت
-
-خيارات التخزين: 256 جيجابايت أو 512 جيجابايت
-
-
-الكاميرا الخلفية:
-
-عدسة رئيسية بدقة 200 ميجابكسل
-
-عدسة فائقة الاتساع بدقة 50 ميجابكسل
-
-عدسة تليفوتوغرافي 3x بدقة 10 ميجابكسل
-
-عدسة تليفوتوغرافي 5x بدقة 50 ميجابكسل
-
-
-الكاميرا الأمامية:
-
-بدقة 12 ميجابكسل
-
-
-البطارية:
-
-سعة 5000 مللي أمبير
-
-عمر بطارية يصل إلى 31 ساعة من تشغيل الفيديو
-
-
-الأبعاد والوزن:
-
-الأبعاد: 162.8 × 77.6 × 8.2 ملم
-
-الوزن: 218 جرام
-
-
-مواد التصنيع:
-
-إطار من التيتانيوم
-
-
-مقاومة الماء والغبار:
-
-معيار IP68
-
-
-الألوان المتوفرة:
-
-Titanium Silverblue
-
-Titanium Gray
-
-Titanium Black
-
-Titanium Whitesilver
-
-Titanium Jetblack (حصري عبر موقع Samsung.com)
-
-Titanium Jadegreen (حصري عبر موقع Samsung.com)
-
-Titanium Pinkgold (حصري عبر موقع Samsung.com)
-
-
-ميزات الذكاء الاصطناعي:
-
-مساعد شخصي متقدم يمكنه تنفيذ مهام متعددة بناءً على الأوامر الصوتية
-
-تحليل الصحة الشخصية عند الارتباط مع Galaxy Watch أو Galaxy Ring
-
-
-ميزات إضافية:
-
-قلم S Pen مدمج
-
-
-
-لمزيد من التفاصيل، يمكنك زيارة الموقع الرسمي لشركة سامسونج. 
-
+            <p class="description"> <table>
+        <tr>
+            <th>المواصفات</th>
+            <th>التفاصيل</th>
+        </tr>
+        <tr>
+            <td><strong>الشاشة</strong></td>
+            <td>6.9 بوصة Dynamic AMOLED 2X، معدل تحديث 120Hz، حماية Corning® Gorilla® Armor 2</td>
+        </tr>
+        <tr>
+            <td><strong>المعالج</strong></td>
+            <td>Snapdragon® 8 Elite</td>
+        </tr>
+        <tr>
+            <td><strong>الذاكرة العشوائية (RAM)</strong></td>
+            <td>12 جيجابايت</td>
+        </tr>
+        <tr>
+            <td><strong>التخزين الداخلي</strong></td>
+            <td>256 جيجابايت / 512 جيجابايت</td>
+        </tr>
+        <tr>
+            <td><strong>الكاميرا الخلفية</strong></td>
+            <td>رئيسية 200 ميجابكسل + تليفوتوغرافي 3x بدقة 10 ميجابكسل + تليفوتوغرافي 5x بدقة 50 ميجابكسل</td>
+        </tr>
+        <tr>
+            <td><strong>البطارية</strong></td>
+            <td>5000 مللي أمبير، شحن سريع 31 واط</td>
+        </tr>
+        <tr>
+            <td><strong>الأبعاد والوزن</strong></td>
+            <td>162.8 × 77.6 × 8.2 مم، وزن 218 جرام</td>
+        </tr>
+        <tr>
+            <td><strong>مقاومة الماء والغبار</strong></td>
+            <td>معيار IP68</td>
+        </tr>
+        <tr>
+            <td><strong>ألوان الهاتف</strong></td>
+            <td>Titanium Black، Titanium White، Titanium Gray، Titanium Blue، Titanium Jadegreen، Titanium Pinkgold</td>
+        </tr>
+        <tr>
+            <td><strong>ميزات إضافية</strong></td>
+            <td>قلم S Pen مدمج، دعم Galaxy Watch & Ring</td>
+        </tr>
+    </table>
 
 ☎️للطلب المباشر اضغط هنا 👇🏽
               <br />
