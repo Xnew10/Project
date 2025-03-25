@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>طلب الخدمة</title>
     <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
     <script>
         function updateWhatsAppLink() {
             let quantity = document.getElementById("quantity").value;
@@ -20,102 +50,56 @@
         <section class="service-details">
             <img src="phones/magic 7 pro.png" alt="صورة الخدمة">
             <h2 id="service-title"> Honor Magic 7 Pro </h2>
-            <p class="description">  مواصفات هاتف Honor Magic 7 Pro:
-                <br />
-
-الشاشة:
-
-نوع LTPO OLED بحجم 6.8 بوصة
-
-دقة 1280 × 2800 بكسل بكثافة 453 بكسل لكل بوصة
-
-معدل تحديث متغير يصل إلى 120 هرتز
-
-دعم HDR Vivid وDolby Vision
-
-سطوع يصل إلى 5000 شمعة في الذروة
-
-حماية بزجاج NanoCrystal Shield
-
-
-المعالج:
-
-Qualcomm Snapdragon 8 Elite بتقنية 3 نانومتر
-
-
-الذاكرة والتخزين:
-
-ذاكرة وصول عشوائي (RAM) بسعة 12 أو 16 جيجابايت
-
-خيارات التخزين الداخلي: 256 جيجابايت، 512 جيجابايت، أو 1 تيرابايت
-
-لا يدعم بطاقة microSD
-
-
-الكاميرا الخلفية:
-
-عدسة رئيسية بدقة 50 ميجابكسل بفتحة عدسة متغيرة f/1.4 – f/2.0 مع مثبت بصري (OIS)
-
-عدسة تليفوتوغرافي (Periscope) بدقة 200 ميجابكسل بفتحة عدسة f/2.6 مع تقريب بصري حتى 3x وتقريب رقمي حتى 100x، ومثبت بصري (OIS)
-
-عدسة فائقة الاتساع بدقة 50 ميجابكسل
-
-
-الكاميرا الأمامية:
-
-عدسة بدقة 50 ميجابكسل بفتحة عدسة f/2.0
-
-مستشعر TOF 3D للمساعدة في العزل والتعرف على الوجه
-
-
-البطارية:
-
-سعة 5850 مللي أمبير (في النسخة العالمية)
-
-شحن سلكي سريع بقوة 100 واط (يصل إلى 100% في 33 دقيقة)
-
-شحن لاسلكي سريع بقوة 80 واط (يصل إلى 100% في 44 دقيقة)
-
-
-نظام التشغيل:
-
-Android 15 مع واجهة MagicOS 9
-
-دعم حتى 5 ترقيات رئيسية لنظام التشغيل
-
-
-الأبعاد والوزن:
-
-الأبعاد: 162.7 × 77.1 × 8.8 ملم
-
-الوزن: 223 جرام
-
-
-مقاومة الماء والغبار:
-
-معيار IP68/IP69 (مقاومة للغبار والماء حتى عمق 1.5 متر لمدة 30 دقيقة، ومقاومة لنفاثات الماء عالية الضغط)
-
-
-مزايا إضافية:
-
-مستشعر بصمة مدمج تحت الشاشة (Ultrasonic)
-
-تقنية التعرف على الوجه ثلاثية الأبعاد (Face ID)
-
-دعم NFC وInfrared
-
-منفذ USB Type-C 3.2 مع دعم DisplayPort 1.2
-
-دعم Emergency SOS عبر الأقمار الصناعية (في الصين فقط)
-
-
-الألوان المتوفرة:
-
-الأسود، الأبيض، الرمادي، والأزرق
-
-
-
-لمزيد من التفاصيل، يمكنك زيارة الموقع الرسمي لشركة هونر أو الاطلاع على المراجعات المتوفرة عبر الإنترنت.
+            <p class="description">  <table>
+        <tr>
+            <th>المواصفات</th>
+            <th>التفاصيل</th>
+        </tr>
+        <tr>
+            <td><strong>الشاشة</strong></td>
+            <td>LTPO OLED بحجم 6.8 بوصة، دقة 1280 × 2800 بكسل، معدل تحديث متغير حتى 120 هرتز، HDR Vivid وDolby Vision، سطوع حتى 5000 شمعة، حماية بزجاج NanoCrystal Shield</td>
+        </tr>
+        <tr>
+            <td><strong>المعالج</strong></td>
+            <td>Qualcomm Snapdragon 8 Elite بتقنية 3 نانومتر</td>
+        </tr>
+        <tr>
+            <td><strong>الذاكرة والتخزين</strong></td>
+            <td>RAM: 12 أو 16 جيجابايت، التخزين: 256GB / 512GB / 1TB، لا يدعم microSD</td>
+        </tr>
+        <tr>
+            <td><strong>الكاميرا الخلفية</strong></td>
+            <td>رئيسية 50MP (f/1.4 – f/2.0) + تليفوتوغرافي 200MP (f/2.6) مع تقريب بصري 3x + فائقة الاتساع 50MP، مثبت بصري OIS</td>
+        </tr>
+        <tr>
+            <td><strong>الكاميرا الأمامية</strong></td>
+            <td>50MP (f/2.0) + مستشعر TOF 3D</td>
+        </tr>
+        <tr>
+            <td><strong>البطارية</strong></td>
+            <td>5850mAh، شحن سلكي 100W (100% في 33 دقيقة)، شحن لاسلكي 80W (100% في 44 دقيقة)</td>
+        </tr>
+        <tr>
+            <td><strong>نظام التشغيل</strong></td>
+            <td>Android 15 مع MagicOS 9، دعم 5 ترقيات رئيسية</td>
+        </tr>
+        <tr>
+            <td><strong>الأبعاد والوزن</strong></td>
+            <td>162.7 × 77.1 × 8.8 ملم، 223 جرام</td>
+        </tr>
+        <tr>
+            <td><strong>مقاومة الماء والغبار</strong></td>
+            <td>IP68/IP69 (مقاومة للماء حتى 1.5 متر ولمدة 30 دقيقة، ومقاومة لنفاثات الماء عالية الضغط)</td>
+        </tr>
+        <tr>
+            <td><strong>مزايا إضافية</strong></td>
+            <td>بصمة Ultrasonic تحت الشاشة، Face ID ثلاثي الأبعاد، NFC، Infrared، USB Type-C 3.2 مع DisplayPort 1.2، دعم Emergency SOS بالأقمار الصناعية (في الصين فقط)</td>
+        </tr>
+        <tr>
+            <td><strong>الألوان المتوفرة</strong></td>
+            <td>الأسود، الأبيض، الرمادي، الأزرق</td>
+        </tr>
+    </table>
 
 
 
