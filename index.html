@@ -18,7 +18,39 @@
     <meta property="og:description" content=" الابتكار بأسلوب عصري " />
     <meta property="og:image" content="img/Pro1.webp" />
     
-    
+    <style>
+.testimonial-box {
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+.testimonial {
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.stars {
+  color: #FFD700;
+  margin-bottom: 5px;
+}
+.name {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+</style>
 
 </head>
 <body>
@@ -127,6 +159,12 @@
     
     </div>
 
+<div class="testimonial-box">
+  <div id="testimonial-content">
+    <!-- سيتم تحديث هذا المحتوى تلقائياً -->
+  </div>
+</div>
+
     <footer style="margin-top: 20px;">
         <p>جميع الحقوق محفوظة &copy; 2025 | خدمتي</p>
         <!-- <p><a href="#">سياسة الخصوصية</a> | <a href="#">الشروط والأحكام</a></p> -->
@@ -176,6 +214,41 @@
 	};
 </script>
 
+<script>
+const testimonials = [
+  { name: "محمد", rating: 5, text: "موقع رائع وسهل الاستخدام!" },
+  { name: "أحمد", rating: 4, text: "الخدمات ممتازة وسريعة." },
+  { name: "سارة", rating: 5, text: "أنصح به للجميع!" },
+  { name: "ليلى", rating: 4, text: "التصميم أنيق جداً." },
+  { name: "يوسف", rating: 5, text: "فكرة مبتكرة وخدمة رائعة." },
+  { name: "خالد", rating: 5, text: "دعم فني ممتاز وسريع." },
+  { name: "نورا", rating: 4, text: "تعامل راقٍ ومحترف." },
+  { name: "عمرو", rating: 5, text: "أفضل تجربة لي حتى الآن!" },
+  { name: "هدى", rating: 5, text: "موقع يستحق التجربة فعلاً." },
+  { name: "بشير", rating: 4, text: "سهل وبسيط ومفيد جداً." }
+];
+
+let index = 0;
+
+function updateTestimonial() {
+  const t = testimonials[index];
+  const stars = "★".repeat(t.rating) + "☆".repeat(5 - t.rating);
+  const html = `
+    <div class="testimonial">
+      <div class="stars">${stars}</div>
+      <div class="text">"${t.text}"</div>
+      <div class="name">– ${t.name}</div>
+    </div>
+  `;
+  document.getElementById("testimonial-content").innerHTML = html;
+  index = (index + 1) % testimonials.length;
+}
+
+// أول تعليق فوراً
+updateTestimonial();
+// تغيير كل 6 ثواني
+setInterval(updateTestimonial, 6000);
+</script>
 
 </body>
 </html>
