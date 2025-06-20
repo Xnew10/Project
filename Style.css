@@ -7,7 +7,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     direction: rtl;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #F8FAFC, #E2E8F0);
     line-height: 1.6;
 }
 .container {
