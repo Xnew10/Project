@@ -36,5 +36,15 @@
             </a>
         </section>
     </div>
+
+    <script>
+        function updateWhatsAppLink() {
+            let quantity = document.getElementById("quantity").value;
+            let serviceName = document.getElementById("service-title").innerText;
+            let message = `السلام عليكم ورحمة الله و بركاته، أريد طلب ${quantity} من خدمة: ${serviceName}`;
+            let whatsappLink = `https://wa.me/249118422860?text=${encodeURIComponent(message)}`;
+            document.getElementById("whatsapp-button").href = whatsappLink;
+        }
+    </script>
 </body>
 </html>
